@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/cc"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:id = "@+id/display"
+        android:layout_above="@+id/clear"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true"
+        android:inputType="numberDecimal"
+        android:gravity="right"
+        />
+
+
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/tan"
+        android:text="Tan"
+        android:onClick="buttonTan"
+        android:layout_alignTop="@+id/i"
+
+        android:layout_toStartOf="@+id/i" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/cos"
+        android:text="Cos"
+        android:onClick="buttonCos"
+        android:layout_alignTop="@+id/sin"
+        android:layout_toEndOf="@+id/sin" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/log"
+        android:text="Log"
+        android:onClick="buttonLog"
+        android:layout_below="@+id/cos"
+        android:layout_toStartOf="@+id/cos" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/sin"
+        android:text="Sin"
+        android:onClick="buttonSin"
+        android:layout_above="@+id/ln"
+        android:layout_alignStart="@+id/percent" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/i"
+        android:text="i"
+        android:onClick="buttonI"
+        android:layout_above="@+id/e"
+        android:layout_alignStart="@+id/e" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/clear"
+        android:text="CLR"
+        android:onClick="buttonClear"
+        android:layout_above="@+id/i"
+        android:layout_alignEnd="@+id/display" />
+
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/ln"
+        android:text="Ln"
+        android:onClick="buttonLn"
+        android:layout_alignTop="@+id/pi"
+        android:layout_toStartOf="@+id/pi" />
+
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/pi"
+        android:text="π"
+        android:onClick="buttonPi"
+        android:layout_above="@+id/fact"
+        android:layout_toEndOf="@+id/fact" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/e"
+        android:text="e"
+        android:onClick="buttonE"
+        android:layout_above="@+id/power"
+        android:layout_alignStart="@+id/power" />
+
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/percent"
+        android:text="%"
+        android:onClick="buttonPercent"
+        android:layout_above="@+id/lp"
+        android:layout_alignStart="@+id/lp" />
+
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/fact"
+        android:text="!"
+
+        android:onClick="buttonFact"
+        android:layout_alignTop="@+id/square"
+        android:layout_toStartOf="@+id/square" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/square"
+        android:text="√"
+        android:onClick="buttonSquare"
+        android:layout_above="@+id/rp"
+        android:layout_toEndOf="@+id/rp" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/power"
+        android:text="^"
+        android:onClick="buttonPower"
+        android:layout_above="@+id/empty"
+        android:layout_alignStart="@+id/empty2" />
+
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/empty2"
+        android:text=""
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/clear" />
+
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/lp"
+        android:text="("
+        android:onClick="buttonLp"
+        android:layout_alignTop="@+id/empty"
+        android:layout_toStartOf="@+id/rp" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/rp"
+        android:text=")"
+        android:onClick="buttonRp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/empty" />
+    <Button android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id = "@+id/empty"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tan" />
+
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/cc"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:id = "@+id/display"
+        android:layout_above="@+id/clear"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true"
+        android:inputType="numberDecimal"
+        android:gravity="right"
+        />
+
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/seven"
+        android:text="7"
+        android:layout_marginStart="15dp"
+        android:layout_above="@+id/four"
+        android:onClick="button7"
+        android:layout_alignParentStart="true" />
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/eight"
+        android:text="8"
+        android:layout_alignTop="@+id/seven"
+        android:onClick="button8"
+        android:layout_toEndOf="@+id/seven" />
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/nine"
+        android:text="9"
+        android:layout_alignTop="@+id/eight"
+        android:onClick="button9"
+        android:layout_toEndOf="@+id/eight" />
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/divide"
+        android:text="÷"
+        android:layout_above="@+id/multiply"
+        android:onClick="buttonDivide"
+        android:layout_alignEnd="@+id/add" />
+    <Button android:layout_width="75dp"
+        android:layout_height="55dp"
+        android:id = "@+id/clear"
+        android:text="CLR"
+        android:layout_above="@+id/divide"
+        android:onClick="buttonClear"
+        android:layout_alignStart="@+id/divide" />
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/four"
+        android:text="4"
+        android:layout_above="@+id/subtract"
+        android:onClick="button4"
+        android:layout_alignStart="@+id/seven" />
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/five"
+        android:text="5"
+        android:layout_centerVertical="true"
+        android:onClick="button5"
+        android:layout_alignStart="@+id/eight" />
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/six"
+        android:text="6"
+        android:layout_alignTop="@+id/five"
+        android:onClick="button6"
+        android:layout_toEndOf="@+id/five" />
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/multiply"
+        android:text="X"
+        android:layout_above="@+id/subtract"
+        android:onClick="buttonMulti"
+        android:layout_toEndOf="@+id/six" />
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/subtract"
+        android:text="-"
+        android:layout_below="@+id/six"
+        android:onClick="buttonSub"
+        android:layout_toEndOf="@+id/six" />
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/one"
+        android:text="1"
+        android:layout_below="@+id/four"
+        android:onClick="button1"
+        android:layout_toStartOf="@+id/five" />
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/two"
+        android:text="2"
+        android:layout_alignTop="@+id/one"
+        android:onClick="button2"
+        android:layout_toStartOf="@+id/three" />
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/three"
+        android:text="3"
+        android:layout_alignTop="@+id/two"
+        android:onClick="button3"
+        android:layout_toStartOf="@+id/subtract" />
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/decimal"
+        android:text="."
+        android:layout_alignBottom="@+id/add"
+        android:onClick="buttonDeci"
+        android:layout_alignStart="@+id/one" />
+
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/zero"
+        android:text="0"
+        android:layout_alignTop="@+id/add"
+        android:onClick="button0"
+        android:layout_toEndOf="@+id/decimal" />
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/equall"
+        android:text="="
+        android:layout_alignTop="@+id/zero"
+        android:onClick="buttonEquall"
+        android:layout_toEndOf="@+id/zero" />
+    <Button android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id = "@+id/add"
+        android:text="+"
+        android:layout_below="@+id/subtract"
+        android:onClick="buttonAdd"
+        android:layout_alignStart="@+id/subtract" />
+
+
+</RelativeLayout>
